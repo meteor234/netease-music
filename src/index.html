@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>网易云模仿</title>
+
+    <link rel="icon" type="image/ico" href="./img/icon1.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <img src="./img/icon2.png" />
+      <span>云音乐</span>
+      <div id="id-top-playing">
+        <span>当前曲目 : </span>
+        <span id="id-top-playing-name"></span>
+      </div>
+    </header>
+    <main id="id-main" class="main" data-page="0">
+      <button id="id-pre-page" class="prePage to-page"><</button>
+      <button id="id-next-page" class="nextPage to-page">></button>
+      <audio id="id-audio-player">
+        <source src="./src/Undertale.mp3" />
+      </audio>
+      <section id="id-page-0" class="main-page">
+        <section id="id-library">
+          <a>云音乐曲库</a>
+          <div id="id-library-list"></div>
+        </section>
+      </section>
+
+      <section id="id-page-1" class="main-page">
+        <section class="left-aside aside">
+          <img id="id-arm" src="img/arm.png" alt="" />
+          <div class="music-cd">
+            <span class="cd-outside midXY">
+              <span id="id-rotate-cd" class="cd midXY bag">
+                <span class="bag midXY" id="id-cd-cover"> </span>
+              </span>
+            </span>
+          </div>
+          <div id="id-music-name">
+            <span id="id-current-music">Undertale - Toby Fox</span>
+            <div class="music-function">
+              <span>喜欢</span>
+              <span>收藏</span>
+              <span>下载</span>
+              <span>分享</span>
+            </div>
+          </div>
+        </section>
+        <section class="right-aside aside">
+          <div class="play-list">
+            播放列表
+          </div>
+          <div id="id-music-play-list" data-cur="0">
+            <div class="music-info-title">
+              <span class="music-name">歌曲</span>
+              <span class="music-duration">时长</span>
+              <span class="music-singer">歌手</span>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+    <footer>
+      <section id="id-music-control">
+        <img id="id-img-pre" src="img/pre.png" alt="pre" />
+        <img id="id-img-play" src="img/play.png" alt="play" />
+        <img id="id-img-next" src="img/next.png" alt="next" />
+      </section>
+      <section id="id-music-vol-order">
+        <img id="id-music-order" data-order="0" src="img/loop.png" alt="" />
+        <img src="img/vol.png" alt="" />
+        <span class="music-vol vetical"></span>
+        <span class="music-vol vetical" id="id-music-vol"></span>
+        <span class="vetical point" id="id-music-vol-point">
+          <span></span>
+        </span>
+      </section>
+      <section id="id-music-progress">
+        <section id="id-current-time">
+          00:00
+        </section>
+        <section id="id-duration">
+          00:00
+        </section>
+        <section id="id-progress">
+          <span class="music-progress vetical" id="id-full-progress"></span>
+          <span class="music-progress vetical" id="id-current-progress"></span>
+          <span class="vetical point" id="id-music-progress-point">
+            <span> </span>
+          </span>
+        </section>
+      </section>
+    </footer>
+    <script src="./scripts/data.js"></script>
+    <script src="./scripts/toolbox.js"></script>
+    <script src="./scripts/player.js"></script>
+    <script src="./scripts/library.js"></script>
+  </body>
+</html>
